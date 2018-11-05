@@ -7,7 +7,7 @@ use Tests\TestCase;
 class CleanCommandTest extends TestCase
 {
     /**
-     * A basic test example.
+     * Test clean command.
      */
     public function testCleanCommand()
     {

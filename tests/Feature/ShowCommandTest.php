@@ -7,7 +7,7 @@ use Tests\TestCase;
 class ShowCommandTest extends TestCase
 {
     /**
-     * A basic test example.
+     * Test show command.
      */
     public function testShowCommand()
     {
