@@ -45,13 +45,13 @@ class AddCommand extends Command
             $this->error($t->getMessage());
             Log::error($t->getMessage());
 
-            return false;
+            return 1;
         }
 
         $this->info('Note saved to database.');
         $this->notify('Notes', 'Note saved to database.');
 
-        return true;
+        return 0;
     }
 
     /**
@@ -61,6 +61,5 @@ class AddCommand extends Command
      */
     public function schedule(Schedule $schedule): void
     {
-        // $schedule->command(static::class)->everyMinute();
     }
 }

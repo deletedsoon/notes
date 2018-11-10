@@ -39,12 +39,12 @@ class ShowCommand extends Command
             $this->error($t->getMessage());
             Log::error($t->getMessage());
 
-            return false;
+            return 1;
         }
 
         $this->info('Notes successfully loaded from database.');
 
-        return true;
+        return 0;
     }
 
     /**

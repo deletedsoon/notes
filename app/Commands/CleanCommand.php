@@ -36,13 +36,13 @@ class CleanCommand extends Command
             $this->error($t->getMessage());
             Log::error($t->getMessage());
 
-            return false;
+            return 1;
         }
 
         $this->info('All notes deleted from database.');
         $this->notify('Notes', 'All notes deleted from database.');
 
-        return true;
+        return 0;
     }
 
     /**
@@ -52,6 +52,5 @@ class CleanCommand extends Command
      */
     public function schedule(Schedule $schedule): void
     {
-        // $schedule->command(static::class)->everyMinute();
     }
 }
